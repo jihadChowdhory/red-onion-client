@@ -1,0 +1,48 @@
+.foodsSection {
+  padding-top: 60px;
+  width: 90%;
+  margin: auto;
+}
+.menuButtons {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.foodsSection div:nth-child(1) button {
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0px 20px;
+  padding: 3px 0px;
+}
+.foodsSection div:nth-child(1) button:nth-child(2) {
+  color: #fa4064;
+  border-bottom: 2px solid #fa4064;
+}
+.foodContainer {
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  justify-content: space-between;
+}
+.foodItem {
+  height: 300px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.foodItem:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 20px #dadada;
+  transition: 0.3s;
+}
+.foodItem img {
+  width: 200px;
+}
+.foodTitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.foodItem p {
+  color: grey;
+}
