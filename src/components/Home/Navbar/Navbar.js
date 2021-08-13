@@ -3,6 +3,7 @@ import styles from "./Navbar.module.css";
 import navLogo from "../../../imgs/navLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
           <a href="/cart">
             <FontAwesomeIcon icon={faCartArrowDown} />
           </a>
-          <a href="/login">Login</a>
+          <Link to="/login">Login</Link>
           <a href="/signup">Sign up</a>
         </div>
       </div>

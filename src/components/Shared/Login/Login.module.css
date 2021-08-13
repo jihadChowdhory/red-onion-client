@@ -1,0 +1,36 @@
+.formContainer {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.formContainer img {
+  width: 220px;
+  margin-bottom: 30px;
+}
+.formContainer input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  margin: 15px 0px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 5px;
+}
+.formContainer button {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 13px;
+  background-color: #fa4064;
+  color: white;
+}
+.formContainer a {
+  text-decoration: none;
+  color: #fa4064;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 15px;
+}

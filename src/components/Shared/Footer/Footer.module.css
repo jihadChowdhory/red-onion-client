@@ -11,6 +11,7 @@
   text-decoration: none;
   color: white;
   font-size: 13px;
+  margin: 10px 0px;
 }
 .footerLinksContainer img {
   width: 150px;
@@ -25,6 +26,7 @@
   padding-top: 40px;
   display: grid;
   grid-template-columns: 70% 30%;
+  align-items: flex-end;
 }
 .copyrightPart a {
   text-decoration: none;

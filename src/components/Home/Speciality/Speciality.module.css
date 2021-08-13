@@ -45,9 +45,10 @@
 .specialityCardDetails a {
   text-decoration: none;
   font-size: 13px;
+  color: #3498db;
 }
 .rightArrow {
-  background-color: #85db50;
+  background-color: #2ecc71;
   padding: 0px 3px;
   border-radius: 50%;
   color: white;
