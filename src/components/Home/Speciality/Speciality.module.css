@@ -1,0 +1,60 @@
+.speciality {
+  width: 90%;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.whyUs {
+  padding-right: 55%;
+}
+.whyUs p {
+  margin-top: 10px;
+}
+.specialityContainer {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.specialityCard {
+  width: 370px;
+  border-radius: 15px;
+}
+.specialityCard:hover {
+  box-shadow: 3px 3px 20px lightgrey;
+  transition: 0.3s;
+}
+.specialityCard > img {
+  width: 100%;
+}
+.specialityCardDetails {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+.specialityCardDetails h3 {
+  font-size: 15px;
+}
+.specialityCardDetails p {
+  font-size: 13px;
+  color: gray;
+}
+.specialityCardDetails > div {
+  margin-left: 10px;
+}
+.specialityCardDetails a {
+  text-decoration: none;
+  font-size: 13px;
+}
+.rightArrow {
+  background-color: #85db50;
+  padding: 0px 3px;
+  border-radius: 50%;
+  color: white;
+}
+.icon {
+  padding: 12px 15px;
+  border-radius: 50%;
+  background-color: #fa4064;
+  color: white;
+}

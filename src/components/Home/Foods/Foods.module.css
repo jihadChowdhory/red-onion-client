@@ -7,6 +7,9 @@
   margin-bottom: 60px;
   text-align: center;
 }
+.menuButtons button:hover {
+  cursor: pointer;
+}
 .foodsSection div:nth-child(1) button {
   border: none;
   background-color: white;
@@ -45,4 +48,19 @@
 }
 .foodItem p {
   color: grey;
+}
+.checkoutFood {
+  text-align: center;
+  padding: 10px;
+}
+.checkoutFood button {
+  padding: 15px 70px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  background-color: #c3c3c3;
+}
+.checkoutFood button:hover {
+  cursor: no-drop;
 }

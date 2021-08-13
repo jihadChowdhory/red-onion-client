@@ -1,7 +1,9 @@
 import React from "react";
+import Footer from "../../Shared/Footer/Footer";
 import Foods from "../Foods/Foods";
 import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
+import Speciality from "../Speciality/Speciality";
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
       <Navbar></Navbar>
       <Header></Header>
       <Foods></Foods>
+      <Speciality></Speciality>
+      <Footer></Footer>
     </div>
   );
 };
