@@ -17,7 +17,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faCartArrowDown} />
           </a>
           <Link to="/login">Login</Link>
-          <a href="/signup">Sign up</a>
+          <Link to="/login">Sign up</Link>
         </div>
       </div>
     </nav>

@@ -13,14 +13,13 @@
 .foodsSection div:nth-child(1) button {
   border: none;
   background-color: white;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 18px;
   margin: 0px 20px;
   padding: 3px 0px;
 }
-.foodsSection div:nth-child(1) button:nth-child(2) {
+.highLightMenu {
   color: #fa4064;
-  border-bottom: 2px solid #fa4064;
+  border-bottom: 2px solid #fa4064 !important;
 }
 .foodContainer {
   display: grid;

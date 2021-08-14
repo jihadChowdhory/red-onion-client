@@ -23,11 +23,11 @@
 .header > div button {
   border: none;
   border-radius: 30px;
-  padding: 15px;
+  padding: 15px 30px;
   background-color: #fa4064;
   color: white;
   position: relative;
-  right: 73px;
+  right: 103px;
 }
 .header > div button:hover {
   cursor: pointer;
