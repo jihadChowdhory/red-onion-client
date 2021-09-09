@@ -21,7 +21,6 @@ const Login = () => {
     const auth = getAuth();
     signInWithPopup(auth, provider)
       .then((result) => {
-        console.log(result);
         const newUserInfo = { ...loggedInUser };
         newUserInfo.isSignedIn = true;
         newUserInfo.email = result.user.email;
