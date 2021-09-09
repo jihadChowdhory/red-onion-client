@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import navLogo from "../../../imgs/navLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
