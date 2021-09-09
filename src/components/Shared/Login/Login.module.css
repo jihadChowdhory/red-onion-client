@@ -1,3 +1,7 @@
+.loginPage {
+  height: 655px;
+  background-image: url("../../../imgs/loginBg.png");
+}
 .formContainer {
   width: 300px;
   margin: auto;
