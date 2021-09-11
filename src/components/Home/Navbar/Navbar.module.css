@@ -16,16 +16,19 @@
 .navbar div:nth-child(1) img {
   width: 180px;
 }
-.navbar div:nth-child(2) a:nth-child(-n + 2) {
+.navbar div:nth-child(2) a:nth-child(-n + 3) {
   margin-right: 30px;
 }
 .navbar div:nth-child(2) a {
   text-decoration: none;
   color: black;
 }
-.navbar div:nth-child(2) a:nth-child(3) {
+.navbar div:nth-child(2) .primaryBtn {
   background-color: #fa4064;
   padding: 10px 30px;
   border-radius: 30px;
   color: white;
+}
+.name {
+  margin-right: 30px;
 }
