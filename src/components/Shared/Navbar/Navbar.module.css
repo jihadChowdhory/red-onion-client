@@ -16,7 +16,7 @@
 .navbar div:nth-child(1) img {
   width: 180px;
 }
-.navbar div:nth-child(2) a:nth-child(-n + 3) {
+.navbar div:nth-child(2) a:nth-child(-n + 4) {
   margin-right: 30px;
 }
 .navbar div:nth-child(2) a {

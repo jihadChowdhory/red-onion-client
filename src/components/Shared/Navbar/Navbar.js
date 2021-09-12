@@ -14,7 +14,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     if (signedInUserInfo.email) {
-      fetch("http://localhost:5000/checkIdentity", {
+      fetch("https://aqueous-basin-07040.herokuapp.com/checkIdentity", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ email: signedInUserInfo.email }),
@@ -30,13 +30,14 @@ const Navbar = () => {
           <img src={navLogo} alt="" />
         </div>
         <div>
+          <Link to="/">Home</Link>
           <Link to="/cart">
             <FontAwesomeIcon icon={faCartArrowDown} />
           </Link>
           <Link to="/menu">Menu</Link>
           {!signedInUserInfo.isSignedIn && <Link to="/login">Login</Link>}
           {!signedInUserInfo.isSignedIn && (
-            <Link to="/login" className={styles.primaryBtn}>
+            <Link to="/signup" className={styles.primaryBtn}>
               Sign up
             </Link>
           )}

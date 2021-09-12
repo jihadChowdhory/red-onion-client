@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../Shared/Footer/Footer";
 import Foods from "../Foods/Foods";
 import Header from "../Header/Header";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../../Shared/Navbar/Navbar";
 import Speciality from "../Speciality/Speciality";
 
 const Home = () => {
