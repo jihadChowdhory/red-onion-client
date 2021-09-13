@@ -1,0 +1,48 @@
+.foodItem {
+  height: 300px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.btn {
+  background-color: #fa4064;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  position: relative;
+  bottom: 50px;
+  visibility: hidden;
+  opacity: 0;
+}
+.foodItem:hover {
+  box-shadow: 2px 2px 20px #dadada;
+  transition: 0.3s;
+}
+.foodItem:hover > .detailsDiv {
+  opacity: 0.1;
+  visibility: hidden;
+  transition: opacity 0.1s linear, visibility 0.1s;
+}
+.foodItem:hover > .btn {
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.1s ease-out 0.2s;
+}
+.btn:hover {
+  box-shadow: 2px 2px 20px #c0c0c0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.foodItem img {
+  width: 200px;
+}
+.foodTitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.foodItem p {
+  color: grey;
+}

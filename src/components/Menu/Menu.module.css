@@ -8,25 +8,3 @@
   grid-template-columns: repeat(3, 320px);
   justify-content: space-between;
 }
-.foodItem {
-  height: 300px;
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-}
-.foodItem:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 20px #dadada;
-  transition: 0.3s;
-}
-.foodItem img {
-  width: 200px;
-}
-.foodTitle {
-  font-size: 18px;
-  margin-top: 10px;
-}
-.foodItem p {
-  color: grey;
-}
