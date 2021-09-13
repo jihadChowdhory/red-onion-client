@@ -6,7 +6,7 @@ import { initializeApp } from "firebase/app";
 import firebaseConfig from "./firebase.config";
 import { UserContext } from "../../../App";
 import { useHistory, useLocation } from "react-router";
-const app = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 const Login = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const [isSignedIn, setIsSignedIn] = useState(false);

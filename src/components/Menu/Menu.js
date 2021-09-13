@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Menu.module.css";
 import Navbar from "../Shared/Navbar/Navbar";
 import breakfast1 from "../../imgs/Breakfast/breakfast1.png";
 
 const Menu = () => {
+  useEffect(() => {
+    fetch("http://localhost:5000/menu")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  }, []);
   return (
     <div>
       <Navbar></Navbar>

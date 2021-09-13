@@ -30,19 +30,21 @@ const Foods = () => {
       <div className={styles.menuButtons}>
         <button
           onClick={handleMenuChange}
-          className={activeMenu === "Breakfast" && styles.highLightMenu}
+          className={
+            activeMenu === "Breakfast" ? styles.highLightMenu : undefined
+          }
         >
           Breakfast
         </button>
         <button
           onClick={handleMenuChange}
-          className={activeMenu === "Lunch" && styles.highLightMenu}
+          className={activeMenu === "Lunch" ? styles.highLightMenu : undefined}
         >
           Lunch
         </button>
         <button
           onClick={handleMenuChange}
-          className={activeMenu === "Dinner" && styles.highLightMenu}
+          className={activeMenu === "Dinner" ? styles.highLightMenu : undefined}
         >
           Dinner
         </button>

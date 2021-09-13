@@ -8,7 +8,6 @@ import {
   faArrowRight,
   faBell,
   faBus,
-  faCartArrowDown,
   faTruck,
 } from "@fortawesome/free-solid-svg-icons";
 
