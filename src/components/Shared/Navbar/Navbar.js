@@ -41,7 +41,7 @@ const Navbar = () => {
               Sign up
             </Link>
           )}
-          {identity && <Link to="/admin">Admin</Link>}
+          {identity && <Link to="/adminpanel">Admin</Link>}
           {signedInUserInfo.isSignedIn && (
             <Link to="/" className={styles.name}>
               {signedInUserInfo.name}

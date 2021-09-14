@@ -1,0 +1,32 @@
+.addFoodContainer {
+  display: flex;
+}
+.adminPanelContainer {
+  width: 20%;
+}
+.formContainer {
+  width: 80%;
+}
+.container {
+  width: 50%;
+  margin: auto;
+  padding-top: 50px;
+}
+.formContainer input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  margin: 15px 0px 15px 0px;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 5px;
+}
+.formContainer button {
+  background-color: #fa4064;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
