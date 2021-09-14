@@ -6,6 +6,9 @@ import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const cart = localStorage.getItem("cart")
+    ? JSON.parse(localStorage.getItem("cart"))
+    : {};
   const info = JSON.parse(localStorage.getItem("loggedInUserInfo"));
   const [identity, setIdentity] = useState(null);
   const signedInUserInfo = info ? info : {};
@@ -33,6 +36,9 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/cart">
             <FontAwesomeIcon icon={faCartArrowDown} />
+            <span className={styles.cartNumber}>
+              {Object.keys(cart).length}
+            </span>
           </Link>
           <Link to="/menu">Menu</Link>
           {!signedInUserInfo.isSignedIn && <Link to="/login">Login</Link>}

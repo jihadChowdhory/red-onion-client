@@ -6,12 +6,16 @@ import { createContext, useState } from "react";
 import Menu from "./components/Menu/Menu";
 import AddFood from "./components/Dashboard/AddFood/AddFood";
 import AdminPanel from "./components/Dashboard/AdminPanel/AdminPanel";
+import Cart from "./components/Cart/Cart";
 export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
+  const [cart, setCart] = useState({});
   return (
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+    <UserContext.Provider
+      value={[loggedInUser, setLoggedInUser, cart, setCart]}
+    >
       <Router>
         <Switch>
           <Route exact path="/">
@@ -22,6 +26,9 @@ function App() {
           </Route>
           <Route path="/addfood">
             <AddFood></AddFood>
+          </Route>
+          <Route path="/cart">
+            <Cart></Cart>
           </Route>
           <Route path="/adminpanel">
             <AdminPanel></AdminPanel>

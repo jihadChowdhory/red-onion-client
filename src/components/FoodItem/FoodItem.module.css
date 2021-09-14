@@ -23,13 +23,13 @@
 .foodItem:hover > .detailsDiv {
   opacity: 0.1;
   visibility: hidden;
-  transition: opacity 0.3s linear, visibility 0.3s;
+  transition: opacity 0.2s linear, visibility 0.2s;
 }
 .foodItem:hover > .btn {
   display: inline-block;
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease-out 0.3s;
+  transition: opacity 0.2s ease-out 0.2s;
 }
 .btn:hover {
   box-shadow: 2px 2px 20px #c0c0c0;
