@@ -36,9 +36,6 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/cart">
             <FontAwesomeIcon icon={faCartArrowDown} />
-            <span className={styles.cartNumber}>
-              {Object.keys(cart).length}
-            </span>
           </Link>
           <Link to="/menu">Menu</Link>
           {!signedInUserInfo.isSignedIn && <Link to="/login">Login</Link>}

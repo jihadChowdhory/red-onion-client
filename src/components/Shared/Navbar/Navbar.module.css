@@ -32,14 +32,3 @@
 .name {
   margin-right: 30px;
 }
-.cartNumber {
-  display: inline-block;
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  text-align: center;
-  position: relative;
-  left: 2px;
-  color: white;
-  background-color: #fa4064;
-}
