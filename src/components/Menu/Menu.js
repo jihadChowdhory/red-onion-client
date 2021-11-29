@@ -8,7 +8,9 @@ const Menu = () => {
   useEffect(() => {
     fetch("https://aqueous-basin-07040.herokuapp.com/menu")
       .then((res) => res.json())
-      .then((data) => setMenu(data));
+      .then((data) => {
+        setMenu(data);
+      });
   }, []);
   return (
     <div>

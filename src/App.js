@@ -7,6 +7,7 @@ import Menu from "./components/Menu/Menu";
 import AddFood from "./components/Dashboard/AddFood/AddFood";
 import AdminPanel from "./components/Dashboard/AdminPanel/AdminPanel";
 import Cart from "./components/Cart/Cart";
+import PrivateRoute from "./components/Shared/PrivateRoute/PrivateRoute";
 export const UserContext = createContext();
 
 function App() {
@@ -24,15 +25,15 @@ function App() {
           <Route path="/menu">
             <Menu></Menu>
           </Route>
-          <Route path="/addfood">
+          <PrivateRoute path="/addfood">
             <AddFood></AddFood>
-          </Route>
-          <Route path="/cart">
+          </PrivateRoute>
+          <PrivateRoute path="/cart">
             <Cart></Cart>
-          </Route>
-          <Route path="/adminpanel">
+          </PrivateRoute>
+          <PrivateRoute path="/adminpanel">
             <AdminPanel></AdminPanel>
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
             <Login></Login>
           </Route>

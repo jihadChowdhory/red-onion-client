@@ -2,14 +2,23 @@ import styles from "./Cart.module.css";
 import Navbar from "../Shared/Navbar/Navbar";
 import Footer from "../Shared/Footer/Footer";
 import CartItem from "../CartItem/CartItem";
+import { useEffect, useState } from "react";
 
 const Cart = () => {
   const cart = localStorage.getItem("cart")
     ? Object.values(JSON.parse(localStorage.getItem("cart")))
     : [];
+  const [total, setTotal] = useState(0);
   const result = cart.reduce((accumulator, currentValue) => {
     return accumulator + parseInt(currentValue.price);
   }, 0);
+  const cartTotal = JSON.parse(localStorage.getItem("cartTotal"));
+  if (!cartTotal) {
+    localStorage.setItem("cartTotal", JSON.stringify(result));
+  }
+  useEffect(() => {
+    setTotal(cartTotal);
+  }, [cartTotal]);
   return (
     <div className={styles.cartContainer}>
       <Navbar></Navbar>
@@ -21,13 +30,19 @@ const Cart = () => {
                 <h2>My Cart</h2>
               </div>
               <div>
-                <h2>Total: {result} Tk.</h2>
-                <h3>Total Items you have selected ({cart.length})</h3>
+                <h2>Total: {cartTotal} Tk.</h2>
+                <h3>Total Items ({cart.length})</h3>
               </div>
             </div>
             <div className={styles.cartDetails}>
               {cart.map((item) => (
-                <CartItem key={item._id} item={item}></CartItem>
+                <CartItem
+                  key={item._id}
+                  item={item}
+                  total={total}
+                  setTotal={setTotal}
+                  cartTotal={cartTotal}
+                ></CartItem>
               ))}
             </div>
           </div>
@@ -43,7 +58,7 @@ const Cart = () => {
               <tbody>
                 <tr>
                   <td>Subtotal</td>
-                  <td className={styles.textRight}>{result} Tk.</td>
+                  <td className={styles.textRight}>{cartTotal} Tk.</td>
                 </tr>
                 <tr>
                   <td>Delivery</td>
@@ -51,14 +66,14 @@ const Cart = () => {
                 </tr>
                 <tr>
                   <td>Total</td>
-                  <td className={styles.textRight}>{result + 100} Tk.</td>
+                  <td className={styles.textRight}>{cartTotal + 100} Tk.</td>
                 </tr>
                 <tr>
                   <td>
                     <b>Payable Total</b>
                   </td>
                   <td className={styles.textRight}>
-                    <b>{result + 100} Tk.</b>
+                    <b>{cartTotal + 100} Tk.</b>
                   </td>
                 </tr>
               </tbody>
@@ -67,7 +82,7 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <h1>Sorry your cart is empty!</h1>
+        <h1 className={styles.emptyHeading}>Sorry your cart is empty!</h1>
       )}
       <Footer></Footer>
     </div>

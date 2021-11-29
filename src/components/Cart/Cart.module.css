@@ -1,4 +1,4 @@
-h1 {
+.emptyHeading {
   text-align: center;
   padding: 118px 0px 119px 0px;
 }
@@ -70,9 +70,11 @@ td {
   color: #ea4064;
   width: 100%;
   margin-top: 15px;
+  padding: 10px;
 }
 .checkoutBtn:hover {
   background-color: #ea4064;
   color: white;
   transition: 0.3s;
+  cursor: pointer;
 }
