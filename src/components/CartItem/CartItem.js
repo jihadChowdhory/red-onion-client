@@ -13,6 +13,10 @@ const CartItem = ({ item, total, setTotal, cartTotal }) => {
         cart.splice(i, 1);
         localStorage.setItem("cart", JSON.stringify(cart));
         localStorage.removeItem(`${item._id}`);
+        localStorage.setItem(
+          "cartTotal",
+          JSON.stringify(cartTotal - parseFloat(item.price))
+        );
         window.location.reload();
       }
     }

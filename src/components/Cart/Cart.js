@@ -78,7 +78,7 @@ const Cart = () => {
                 </tr>
               </tbody>
             </table>
-            <button className={styles.checkoutBtn}>Go To Checkout Page</button>
+            <button className={styles.checkoutBtn}>Order</button>
           </div>
         </div>
       ) : (

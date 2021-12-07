@@ -4,7 +4,6 @@ import { Redirect, Route } from "react-router";
 const PrivateRoute = ({ children, ...rest }) => {
   const loginInfo = JSON.parse(localStorage.getItem("loggedInUserInfo"));
   const userInfo = loginInfo ? loginInfo : {};
-  console.log(userInfo.isSignedIn);
   return (
     <Route
       {...rest}

@@ -9,6 +9,7 @@ const AdminPanel = () => {
       <Link to="/addfood">Add Food</Link>
       <Link to="/addadmin">Add Admin</Link>
       <Link to="/orders">Orders</Link>
+      <Link to="/foods">Foods</Link>
     </div>
   );
 };
